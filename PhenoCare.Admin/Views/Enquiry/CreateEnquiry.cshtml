@@ -1,0 +1,55 @@
+﻿@using Antlr.Runtime
+@model PhenoCare.Admin.Models.EnquiryViewModel
+
+@{
+    ViewBag.Title = "Create Enquiry";
+}
+
+<hgroup class="title">
+    <h1>Take a new enquiry.</h1>
+</hgroup>
+
+<div class="container col-md-6">
+    <div class="row">
+
+        @using (Html.BeginForm("CreateEnquiry","Enquiry",FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+
+            <div class="form-group">
+                @Html.HiddenFor(m=>m.EnquiryId)
+                @Html.HiddenFor(m=>m.StudentId)
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.Phone)
+                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.Email)
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.Institute)
+                @Html.TextBoxFor(m => m.Institute, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.IntrestedIn)
+                @Html.TextBoxFor(m => m.IntrestedIn, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.Notes)
+                @Html.TextAreaFor(m => m.Notes, new { @class = "form-control" })
+
+                @Html.LabelFor(m => m.Status)
+                @Html.DropDownListFor(m => m.Status, Model.EnquiryStatus, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Status)
+
+            </div>
+    
+            <input type="submit" class="btn btn-lg btn-primary" value="Save"/>
+            @Html.ActionLink("Cancel", "Index", "Enquiry",new {@class="btn btn-default btn-sm"})
+        }
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+    </div>
+</div>

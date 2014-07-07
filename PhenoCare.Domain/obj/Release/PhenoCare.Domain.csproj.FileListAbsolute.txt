@@ -1,0 +1,9 @@
+C:\Firoj\Projects\Side\PhenoCare\PhenoCare.Domain\bin\Release\PhenoCare.Domain.dll
+C:\Firoj\Projects\Side\PhenoCare\PhenoCare.Domain\bin\Release\PhenoCare.Domain.pdb
+C:\Firoj\Projects\Side\PhenoCare\PhenoCare.Domain\obj\Release\PhenoCare.Domain.dll
+C:\Firoj\Projects\Side\PhenoCare\PhenoCare.Domain\obj\Release\PhenoCare.Domain.pdb
+C:\Firoj\GIT\PhenoCare\PhenoCare.Domain\bin\Release\PhenoCare.Domain.dll
+C:\Firoj\GIT\PhenoCare\PhenoCare.Domain\bin\Release\PhenoCare.Domain.pdb
+C:\Firoj\GIT\PhenoCare\PhenoCare.Domain\obj\Release\PhenoCare.Domain.csprojResolveAssemblyReference.cache
+C:\Firoj\GIT\PhenoCare\PhenoCare.Domain\obj\Release\PhenoCare.Domain.dll
+C:\Firoj\GIT\PhenoCare\PhenoCare.Domain\obj\Release\PhenoCare.Domain.pdb

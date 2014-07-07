@@ -1,0 +1,36 @@
+﻿@model IEnumerable<PhenoCare.Admin.Models.EnquiryViewModel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.ActionLink("Create Enquiry", "CreateEnquiry", "Enquiry",new {@class="btn btn-success btn-lg"})
+
+
+<div class="container col-md-12">
+    <div class="row">
+
+        <table class="table table-striped">
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+            @if (Model != null)
+            {
+                foreach (var enquiry in Model)
+                {
+                <tr>
+                    <td>@enquiry.Name</td>
+                    <td>@enquiry.Phone</td>
+                    <td>@enquiry.Email</td>
+                    <td>@enquiry.Status</td>
+                    <td>@Html.ActionLink("Edit","EditEnquiry",new{id=@enquiry.EnquiryId},new{@class="btn btn-sm btn-info"})</td>
+                </tr>
+                }
+            }
+        </table>
+    </div>
+</div>
