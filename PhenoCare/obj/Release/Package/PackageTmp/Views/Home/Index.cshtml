@@ -1,0 +1,161 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="fill"></div>
+            <div class="carousel-caption">
+                <h1>Our Mission</h1>
+                <p>To constantly improve what is essential to develope quality software by mastering technology and methodology.</p>
+                <p><a class="btn btn-lg btn-primary" href="#build" role="button">Learn more</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill"></div>
+            <div class="carousel-caption">
+                <h1>Our Coaching</h1>
+                <p>We are exprienced in software technology and methodology. We want help you to succeed with our phenomenal coaching service. </p>
+                <p><a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Coaching")" role="button">Learn more</a></p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="fill"></div>
+            <div class="carousel-caption">
+                <h1>Our Consulting</h1>
+                <p>We are exprienced software craftsmen. We are exprienced in transforming legacy systems into cutting age technology. We will help you to succeed with our phenomenal consulting service.</p>
+                <p><a class="btn btn-lg btn-primary" href="#consultancy" role="button">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="icon-next"></span>
+    </a>
+</div>
+<!-- /.carousel -->
+
+<!-- Marketing messaging and featurettes
+    ================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <blockquote class="alert-info">
+               <div class="marquee"><h4><span class="label label-danger">Announcement</span> Selenium with Java and MVC batches starting from 28 jun 2014. Timings for Sel: 11 am - 2 pm and MVC.net -  3 pm - 6 pm. For more information, please call us on <span class="glyphicon glyphicon-phone"></span> <b>+91 - 8600 8777 18, +91 - 8600 8777 19</b> </h4></div>
+            </blockquote>
+        </div>
+    </div>
+    <hr/>
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="../../Images/Coach-2.jpg" alt="Generic placeholder image">
+            <h2>Coach</h2>
+            <p>We coach professionals. We help them in applying theory knowledge in practical projects scenarios.</p>
+            <p><a class="btn btn-default" href="@Url.Action("Index", "Coaching")" role="button">View details &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img class="img-circle" src="../../Images/Consult-2.jpg" alt="Generic placeholder image">
+            <h2>Consult</h2>
+            <p>We provide consulting service to improve your legacy softwares. We will help you turning your older systems into new modern Mobile platform.</p>
+            <p><a class="btn btn-default" href="#consultancy" role="button">View details &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+
+        <div class="col-lg-4">
+            <img class="img-circle" src="../../Images/Build-2.jpg" alt="Generic placeholder image">
+            <h2>Build</h2>
+            <p>We rapidly build quality software to support your business needs.</p>
+            <p><a class="btn btn-default" href="#build" role="button">View details &raquo;</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">We are software coach. <span class="text-muted">We will help you to sharpen your skillset.</span></h2>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="../../Images/coach_trucker_hat.jpg" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider" id="consultancy">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="../../Images/consultancy.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading">We are exprienced in software technology and process. <span class="text-muted">We will help you consult you with our skillset and toolkit.</span></h2>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette" id="build">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Continuous improvement. <span class="text-muted">We will help you to design your product, implement solution, evaluate various metrics and assess results.</span></h2>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="../../Images/cycle.jpg" alt="Generic placeholder image">
+        </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+</div>
+<!-- /.container -->
+
+@section pageScript
+{
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.carousel').carousel({
+                interval: 3000 //changes the speed
+            });
+
+            $(".nav li").removeClass("active");
+            $("#home").addClass('active');
+
+            $(".marquee").marquee({ duration: 15000, pauseOnHover: true });
+        });
+    </script>
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51105728-1', 'phenocare.com');
+        ga('send', 'pageview');
+
+</script>
+}

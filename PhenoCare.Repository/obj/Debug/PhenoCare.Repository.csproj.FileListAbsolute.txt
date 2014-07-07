@@ -1,0 +1,16 @@
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\PhenoCare.Repository.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\PhenoCare.Repository.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Configuration.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Providers.Default.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\PhenoCare.Domain.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\PhenoCare.Domain.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.xml
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Configuration.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Configuration.xml
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Providers.Default.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\bin\Debug\Insight.Database.Providers.Default.xml
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\obj\Debug\PhenoCare.Repository.csprojResolveAssemblyReference.cache
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\obj\Debug\PhenoCare.Repository.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Repository\obj\Debug\PhenoCare.Repository.pdb

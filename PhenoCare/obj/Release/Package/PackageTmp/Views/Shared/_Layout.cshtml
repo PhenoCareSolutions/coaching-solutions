@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhenoCare Solutions</title>
+
+    <!-- Bootstrap -->
+    <link href="../../Content/Site.css" rel="stylesheet" />
+    <link href="../../Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../Content/css/carousel.css" rel="stylesheet">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div id="menubar-logo">
+                            <a class="navbar-brand" href="http://PhenoCare.com"><img class="img-rounded" src="../../Images/PhenoCareLogo-Small.png" alt="PhenoCare Solutions" /></a>
+                        </div>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id="home" class="active">@Html.ActionLink("About Us", "Index", "Home")</li>
+                            <li id="coaching">@Html.ActionLink("Coaching", "Index", "Coaching")</li>
+                            <li id="batchschedule">@Html.ActionLink("Batch Schedule", "Index", "BatchSchedule")</li>
+                            <li id="bootcamp">@Html.ActionLink("Bootcamp", "Index", "BootCamp")</li>
+                            <li id="blog">@Html.ActionLink("Blog", "Index", "Blog")</li>
+                            <li id="contact">@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+        </div>
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="pull-right"><a href="#">Back to top</a></p>
+                    <p>&copy; 2014 PhenoCare Solutions &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+                    <p>
+                        <span class="label label-primary">Phone:</span>
+                        <span>+91 - 8600 8777 18, +91 - 8600 8777 19</span>
+                    </p>
+                    <p class="pull-right">
+                        Mayur Trade Center,Next to Kunal Plaza,Office No P35-36,Top Floor, Chinchwad Station, Pune - 411 019, Maharashtra
+                    </p>
+                    <p>
+                        <span class="label label-primary">Enquiry:</span>
+                        <span><a href="mailto:chinchwad@phenocare.com">chinchwad@phenocare.com</a></span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="../../Content/js/bootstrap.min.js"></script>
+    <script src="../../Content/js/docs.min.js"></script>
+    <script src="../../Scripts/jquery.marquee.min.js"></script>
+    @RenderSection("pageScript", required: false)
+</body>
+</html>

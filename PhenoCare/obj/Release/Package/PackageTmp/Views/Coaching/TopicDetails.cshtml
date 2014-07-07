@@ -1,0 +1,111 @@
+﻿@model PhenoCare.Models.CourseDetailViewModel
+
+@{
+    ViewBag.Title = "TopicDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="contact-top-buffer">
+    <div class="col-md-offset-1 col-md-10 ">
+        <div class="row">
+            <div class="bg-primary well-sm">
+                <h1>@Html.Raw(Model.Name)</h1>
+            </div>
+
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-2">
+                <a href="@Url.Action("Index", "Enrollment", new { course = @Model.Name })" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-edit"></span>Enquiry!
+                </a>
+            </div>
+
+            <div class="col-md-offset-5 col-md-2">
+                <a href="@Url.Action("Index")" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-list"></span>View Tracks
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="@Url.Action("CourseOfferingDetails", new { Model.TrackId })" class="btn btn-warning btn-lg"><span class="glyphicon glyphicon-list"></span>View Courses Modules
+                </a>
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <ul class="nav nav-tabs ui-tabs" id="myTab">
+                <li class="active"><a href="#topics"><b>Topics Overview</b></a></li>
+                @if (Model.HasSubTopics)
+                {
+                    <li><a href="#details"><b>Topics with Details</b></a></li>
+                }
+            </ul>
+            <div class="divider"></div>
+            <div id='content' class="tab-content">
+                <div class="tab-pane active" id="topics">
+                    <br/>
+                    <div>
+                        <ul class="list-group">
+                            @foreach (var topic in Model.TopicList)
+                            {
+                                <li class="list-group-item">@Html.Raw(topic.Name)</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="details">
+                    <br/>
+                    <div>
+                        <ul class="list-group">
+                            @if (Model.HasSubTopics)
+                            {
+                                foreach (var topic in Model.TopicList)
+                                {
+                                    <li class="list-group-item list-group-item-info">@Html.Raw(topic.Name)</li>
+
+                                    foreach (var subTopic in topic.SubTopics)
+                                    {
+                                        <li class='list-group-item'>@Html.Raw(subTopic.Name)</li>
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                foreach (var topic in Model.TopicList)
+                                {
+                                    <li class="list-group-item">@Html.Raw(topic.Name)</li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section pageScript
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".nav li").removeClass("active");
+            $("#coaching").addClass('active');
+            $('#myTab a:first').tab('show');
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        });
+    </script>
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51105728-1', 'phenocare.com');
+        ga('send', 'pageview');
+
+</script>
+}

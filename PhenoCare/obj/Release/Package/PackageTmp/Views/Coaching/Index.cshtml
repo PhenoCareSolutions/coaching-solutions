@@ -1,0 +1,99 @@
+﻿@model IEnumerable<PhenoCare.Models.Track>
+@{
+    ViewBag.Title = "PhenoCare Solutions - Coaching";
+}
+
+<div class="contact-top-buffer">
+    <div class="col-md-offset-1 col-md-10 ">
+        <div class="bg-primary well-sm">
+            <h1>Coaching</h1>
+            <p>with our phenomenal care</p>
+        </div>
+         <hr/>
+        <div class="row">
+            <div class="col-md-8">
+                <p class="lead">
+                    Our coaching programs are designed considering the needs of individual software professionals and entry level strudents.
+                </p>
+                <p>
+                    We believe on imparting hands-on training which is more important than mere classroom training. Our coaching methodology gives the real time experience to our students so that they can immediately take up the new task. Our every coaching program is the classic blend experiential learning and theoretical learning with following unique highlights.
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="bg-success text-center">
+                    <div class="marquee ver" data-direction='up' data-duration="8000">
+                        <div>
+                            <h1>Asp.Net MVC5</h1>
+                            <small>Servlets JSP JAX RS</small>
+                            <br />
+                            <span class="label label-primary">New</span> Ruby on Rails
+                            <br />
+                            <h3>Selenium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var track in Model)
+            {
+                <div class="col-md-3">
+                    <div class="tile">
+                        <div class="thumbnail">
+                            <h4><a href="@Url.Action("CourseOfferingDetails", new { @trackId = track.Id })" >@track.Name</a></h4>
+                            <div class="divider"></div>
+                            @if (!string.IsNullOrWhiteSpace(track.Keywords))
+                            {
+                                <p><small>@track.Keywords</small></p>
+                            }
+                            <a href="@Url.Action("CourseOfferingDetails", new { @trackId = track.Id })" ><span class="glyphicon glyphicons-lg glyphicon-circle-arrow-right"></span></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+
+@section pageScript
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".nav li").removeClass("active");
+            $("#coaching").addClass('active');
+
+            var icons = {
+                header: "ui-icon-circle-arrow-e",
+                activeHeader: "ui-icon-circle-arrow-s"
+            };
+            $("#accordion").accordion({
+                icons: icons
+            });
+            $("#toggle").button().click(function () {
+                if ($("#accordion").accordion("option", "icons")) {
+                    $("#accordion").accordion("option", "icons", null);
+                } else {
+                    $("#accordion").accordion("option", "icons", icons);
+                }
+            });
+
+            $(".marquee").marquee({ duration: 15000, pauseOnHover: true });
+        });
+    </script>
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51105728-1', 'phenocare.com');
+        ga('send', 'pageview');
+
+</script>
+}

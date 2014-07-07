@@ -116,7 +116,7 @@
       <Name>PhenoCare.Repository</Name>
     </ProjectReference>
     <ProjectReference Include="..\PhenoCare\PhenoCare.csproj">
-      <Project>{3AA99436-C1F7-4129-966E-0E3239AA574A}</Project>
+      <Project>{3aa99436-c1f7-4129-966e-0e3239aa574a}</Project>
       <Name>PhenoCare</Name>
     </ProjectReference>
   </ItemGroup>

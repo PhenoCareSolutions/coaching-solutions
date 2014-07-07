@@ -1,0 +1,5 @@
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Domain\bin\Debug\PhenoCare.Domain.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Domain\bin\Debug\PhenoCare.Domain.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Domain\obj\Debug\PhenoCare.Domain.dll
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Domain\obj\Debug\PhenoCare.Domain.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare.Domain\obj\Debug\PhenoCare.Domain.csprojResolveAssemblyReference.cache
