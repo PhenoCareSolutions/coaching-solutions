@@ -3,49 +3,68 @@
 }
 <!-- Carousel
     ================================================== -->
-<div id="myCarousel" class="carousel slide">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div id="myCarousel" class="carousel slide">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="fill"></div>
-            <div class="carousel-caption">
-                <h1>Our Mission</h1>
-                <p>To constantly improve what is essential to develope quality software by mastering technology and methodology.</p>
-                <p><a class="btn btn-lg btn-primary" href="#build" role="button">Learn more</a></p>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="fill"></div>
+                        <div class="carousel-caption">
+                            <h1>Our Mission</h1>
+                            <p>To constantly improve what is essential to develope quality software by mastering technology and methodology.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#build" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill"></div>
+                        <div class="carousel-caption">
+                            <h1>Our Coaching</h1>
+                            <p>We are exprienced in software technology and methodology. We want help you to succeed with our phenomenal coaching service. </p>
+                            <p><a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Coaching")" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fill"></div>
+                        <div class="carousel-caption">
+                            <h1>Our Consulting</h1>
+                            <p>We are exprienced software craftsmen. We are exprienced in transforming legacy systems into cutting age technology. We will help you to succeed with our phenomenal consulting service.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#consultancy" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="icon-next"></span>
+                </a>
             </div>
         </div>
-        <div class="item">
-            <div class="fill"></div>
-            <div class="carousel-caption">
-                <h1>Our Coaching</h1>
-                <p>We are exprienced in software technology and methodology. We want help you to succeed with our phenomenal coaching service. </p>
-                <p><a class="btn btn-lg btn-primary" href="@Url.Action("Index", "Coaching")" role="button">Learn more</a></p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="fill"></div>
-            <div class="carousel-caption">
-                <h1>Our Consulting</h1>
-                <p>We are exprienced software craftsmen. We are exprienced in transforming legacy systems into cutting age technology. We will help you to succeed with our phenomenal consulting service.</p>
-                <p><a class="btn btn-lg btn-primary" href="#consultancy" role="button">Learn more</a></p>
-            </div>
+        <div class="col-md-3">
+            <div class="bg-primary" style="margin-top: 50px">
+                <ul class="nav nav-stacked">
+                    <li><a href="@Url.Action("Index","Enrollment")"><span class="glyphicon glyphicon-envelope"></span> Enquiry</a></li>
+                    <li><a href="@Url.Action("Index","BatchSchedule")"><span class="glyphicon glyphicon-list"></span> Batch Schedule</a></li>
+                    <li><a href="@Url.Action("Contact","Home")"><span class="glyphicon glyphicon-send"></span> Contact us</a></li>
+                    <li><a href="#Variabler"><span class="glyphicon glyphicon-star"></span> Subscribe</a></li>
+                    <li><a href="@Url.Action("Contact","Home")"><span class="glyphicon glyphicon-envelope"></span> Feedback</a></li>
+                    <li><a href="#Variabler"><span class="glyphicon glyphicon-comment"></span> What student say about us</a></li>
+                    <li><a href="#Variabler"><span class="glyphicon glyphicon-comment"></span> What corporate  say about us</a></li>
+                </ul>
+                </div>
         </div>
     </div>
-
-    <!-- Controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
 </div>
 <!-- /.carousel -->
 

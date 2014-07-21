@@ -117,3 +117,4 @@ C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare\bin\DotNetOpenAuth.OpenId.xm
 C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
 C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare\obj\Debug\PhenoCare.dll
 C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare\obj\Debug\PhenoCare.pdb
+C:\Firoj\GIT\PhenoCare\coaching-solutions\PhenoCare\obj\Debug\PhenoCare.csprojResolveAssemblyReference.cache
